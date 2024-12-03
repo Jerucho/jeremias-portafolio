@@ -79,13 +79,15 @@ export const Hero: React.FC = () => {
         </p>
         <div className="flex flex-wrap items-center gap-[30px]">
           <a
-            href=""
+            target="_blank"
+            href="https://github.com/Jerucho"
             className="text-5xl transition-all ease-out hover:text-secondary hover:scale-110"
           >
             <i className="fa-brands fa-github"></i>
           </a>
           <a
-            href=""
+            target="_blank"
+            href="https://www.linkedin.com/in/jeremias-amador-37b583264/"
             className="text-5xl transition-all ease-out hover:text-secondary hover:scale-110"
           >
             <i className="fa-brands fa-linkedin"></i>
