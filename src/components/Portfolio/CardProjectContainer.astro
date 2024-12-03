@@ -1,0 +1,39 @@
+---
+import { PortfolioCard } from "./PortfolioCard";
+import "../../styles/FadeInAnimation.css";
+import { Title } from "../Title/Title";
+---
+
+<div id="portfolio" class="pt-[90px]">
+  <Title title="Portfolio" />
+  <section class="flex flex-wrap justify-center">
+    <PortfolioCard
+      title="Raccoon"
+      description="Inventory Management"
+      techStack={[
+        "Typescript",
+        "React",
+        "Node.js",
+        "Express",
+        "PostgreSQL",
+        "JWT",
+      ]}
+      image={"bg-raccoon"}
+      link="https://www.google.com"
+    />
+    <PortfolioCard
+      title="Genesis Colper"
+      description="Website"
+      techStack={["React"]}
+      image="bg-genesisColper"
+      link="https://www.google.com"
+    />
+    <PortfolioCard
+      title="Transportes Don Juan"
+      description="Website"
+      techStack={["Astro", "React"]}
+      image="bg-transportesDonJuan"
+      link="https://www.google.com"
+    />
+  </section>
+</div>

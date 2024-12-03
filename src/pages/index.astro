@@ -1,16 +1,42 @@
 ---
-
+import AboutMe from "../components/About/AboutMe.astro";
+import Contact from "../components/Contact/Contact.astro";
+import Footer from "../components/Footer/Footer.astro";
+import { Hero } from "../components/Hero/Hero";
+import MyStack from "../components/MyStack/MyStack.astro";
+import { Navbar } from "../components/Navbar/Navbar";
+import CardProjectContainer from "../components/Portfolio/CardProjectContainer.astro";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Jeremias Amador - FullStack Developer</title>
+  </head>
+  <body class="bg-tertiary pt-[90px]">
+    <Navbar client:only />
+
+    <Hero client:only />
+    <CardProjectContainer />
+    <MyStack />
+    <AboutMe />
+    <Contact />
+    <Footer />
+  </body>
 </html>
