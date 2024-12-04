@@ -73,10 +73,10 @@ export const Hero: React.FC = () => {
     >
       <div className="flex flex-col gap-1rem font-FiraCode text-primary">
         <h3 className="text-3xl font-FiraCode font-bold ">Hello World!</h3>
-        <h2 className="text-6xl font-bold">I'm Jeremias Amador</h2>
-        <p className="text-5xl font-FiraCode text-secondary font-bold">
-          Fullstack Developer
-        </p>
+        <h2 className="text-6xl font-bold">
+          Jeremias Amador <br /> Fullstack Developer
+        </h2>
+        <p className="text-5xl font-FiraCode text-secondary font-bold"></p>
         <div className="flex flex-wrap items-center gap-[30px]">
           <a
             target="_blank"
